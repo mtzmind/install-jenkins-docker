@@ -2,17 +2,17 @@
 
 This repository contains a Docker Compose configuration for a quick installation of Jenkins. This setup is not intended for production systems.
 
-Credits: This approach is mostly based on the [offical instructions](https://www.jenkins.io/doc/book/installing/docker/) but takes advantage of Docker Compose (by using a `docker-compose.yml` file) to reduce the number of steps needed to get Jenkins up and running.
+Credits: This approach is mostly based on the [official instructions](https://www.jenkins.io/doc/book/installing/docker/) but takes advantage of Docker Compose (by using a `docker-compose.yml` file) to reduce the number of steps needed to get Jenkins up and running.
 
 # Docker Installation
 
-## Step 1
+## Step 0
 
 Install Docker locally (probably using Docker Desktop is the easiest approach).
 
-## Step 2
+## Step 1
 
-Clone this repository or download it's contents. 
+Clone this repository or download its contents. 
 
 ## Step 2
 
@@ -42,14 +42,14 @@ If you wish to stop Jenkins and get back to it later, run:
 docker compose down
 ```
 
-If you wish to start Jenkins again later, just run the same comand from Step 3.
+If you wish to start Jenkins again later, just run the same command from Step 3.
 
 
 # Removing Jenkins
 
-Once you are done playing with Jenkins maybe it is time to clean things up.
+Once you are done playing with Jenkins, maybe it is time to clean things up.
 
-Run the following comand to terminate Jenkins and to remove all volumes and images used:
+Run the following command to terminate Jenkins and to remove all volumes and images used:
 
 ```
 docker compose down --volumes --rmi all 
